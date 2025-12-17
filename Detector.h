@@ -1,0 +1,21 @@
+#ifndef DETECTOR_H
+#define DETECTOR_H
+
+#include "Subject.h"
+
+class Detector : public Subject {
+protected:
+    int sensitivity;
+    bool isActive;
+
+public:
+    Detector(int s = 5)
+        : sensitivity(s), isActive(true) {}
+
+    void activate()   { isActive = true; }
+    void deactivate() { isActive = false; }
+
+    virtual void detectEvent() = 0;
+};
+
+#endif
