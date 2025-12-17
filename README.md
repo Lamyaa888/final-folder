@@ -40,7 +40,9 @@ When smoke or gas exceeds the sensitivity threshold:
 - The implementation directly matches the UML design
 - The Observer Pattern is explicitly modeled using `Subject` and `Observer` interfaces
 - No changes were made to other subsystems
+## UML Diagram
 
+![Detection System UML](images/uml_detection.png)
 ---
 
 ## 5. How to Run
