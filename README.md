@@ -42,7 +42,9 @@ When smoke or gas exceeds the sensitivity threshold:
 - No changes were made to other subsystems
 ## UML Diagram
 
-![Detection System UML](images/uml_detection.png)
+## UML Diagram
+
+![UML Diagram](UML.jpeg)
 ---
 
 ## 5. How to Run
