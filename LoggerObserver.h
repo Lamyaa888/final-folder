@@ -1,13 +1,15 @@
-#ifndef LOGGEROBSERVER_H
-#define LOGGEROBSERVER_H
+#ifndef LOGOBSERVER_H_INCLUDED
+#define LOGOBSERVER_H_INCLUDED
 
+#include <iostream>
 #include "Observer.h"
 
-class LoggerObserver : public Observer {
+// Logger observer: logs detection events
+class LogObserver : public Observer {
 public:
-    void update() override {
-        // simulate logging
+    virtual void update(const std::string& msg) {
+        std::cout << "[LOGGER] Log entry: " << msg << std::endl;
     }
 };
 
-#endif
+#endif // LOGOBSERVER_H_INCLUDED
